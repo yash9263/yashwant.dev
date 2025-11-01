@@ -35,7 +35,7 @@ export default function CursorBlur() {
 
   return (
     <div 
-      className="pointer-events-none fixed inset-x-0 top-0 h-64 z-0 overflow-hidden"
+      className="pointer-events-none absolute inset-x-0 top-0 h-64 z-0 overflow-hidden"
       style={{
         maskImage: 'linear-gradient(to bottom, black 0%, black 50%, transparent 100%)',
         WebkitMaskImage: 'linear-gradient(to bottom, black 0%, black 50%, transparent 100%)',
