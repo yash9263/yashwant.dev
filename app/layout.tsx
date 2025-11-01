@@ -17,6 +17,14 @@ export const metadata: Metadata = {
     icon: '/favicon.ico',
   },
   openGraph: {
+    type: 'website',
+    url: 'https://yashwant.dev',
+    title: 'Yashwant',
+    description: "yashwant's little corner of the internet",
+  },
+  twitter: {
+    card: 'summary',
+    creator: '@yashwant0098',
     title: 'Yashwant',
     description: "yashwant's little corner of the internet",
   },
@@ -44,6 +52,14 @@ export const metadata: Metadata = {
   category: 'technology',
 }
 
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'Yashwant',
+  url: 'https://yashwant.dev',
+  description: "yashwant's little corner of the internet",
+}
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -51,12 +67,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn(inter.variable, 'antialiased')} suppressHydrationWarning>
+      <body
+        className={cn(inter.variable, 'antialiased')}
+        suppressHydrationWarning
+      >
         {children}
         {process.env.NODE_ENV === 'production' &&
           process.env.GOOGLE_ANALYTICS_ID && (
             <GoogleAnalytics gaId={process.env.GOOGLE_ANALYTICS_ID} />
           )}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
       </body>
     </html>
   )
