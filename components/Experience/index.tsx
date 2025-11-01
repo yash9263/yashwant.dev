@@ -8,8 +8,8 @@ export default function Experience() {
           className="group relative flex flex-col gap-2 py-3 px-0 rounded-md"
           key={i}
         >
-          <header className="text-zinc-700">{date}</header>
-          <h3 className="text-sm font-medium">
+          <header className="text-zinc-700 text-sm">{date}</header>
+          <h3 className="text-lg font-medium">
             <ExtLink
               href={link}
               target="_blank"
@@ -45,7 +45,7 @@ const experiences = [
   {
     date: 'July 2021 - July 2024',
     position:
-      'Fullstack Developer · Ratecity acquired by Canstar (via Fullness)',
+      'Fullstack Developer · Ratecity · acquired by Canstar (via Fullness)',
     link: 'https://www.ratecity.com.au',
     description: (
       <p>
