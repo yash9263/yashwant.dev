@@ -11,14 +11,13 @@ export default function Home() {
         <time className="text-zinc-600 text-sm" dateTime="2025-10-31">
           October 31, 2025
         </time>
-        <div className="flex flex-col gap-16">
+        <div className="flex flex-col gap-16 text-pretty">
           <section className="flex flex-col gap-4" id="about">
-            <p className="max-w-lg">
-              I&apos;m a software engineer with a passion for programming and
-              problem solving. I enjoy building visually engaging and performant
-              frontends and the backend systems that power them. I love
-              exploring new technologies and building prototypes to validate
-              ideas.
+            <p className="max-w-lg text-pretty">
+              I&apos;m a software engineer with a passion for problem solving. I
+              enjoy building visually engaging and performant frontends and the
+              backend systems that power them. I love exploring new technologies
+              and building prototypes to validate ideas.
             </p>
             <p className="max-w-lg">
               I currently work at{' '}
@@ -37,15 +36,10 @@ export default function Home() {
           </section>
           <section id="experience">
             <Experience />
-            {/* todo: add resume link */}
-            {/* <p>
-            <span className="text-zinc-500">
-            View full resume<TopRight />
-            </span>{' '}
-            <span className='text-zinc-500'>(will update soon)</span>
-            </p> */}
-            <p className="text-zinc-500 text-sm">
-              procrastinating on writing more stuff here...
+            <p>
+              <ExtLink href="/resume.pdf" target="_blank">
+                View full resume
+              </ExtLink>
             </p>
           </section>
           <section className="flex flex-col gap-4" id="contact">
@@ -63,6 +57,9 @@ export default function Home() {
               >
                 Linkedin
               </ExtLink>
+            </p>
+            <p className="text-zinc-500 text-sm">
+              procrastinating on writing more stuff here...
             </p>
           </section>
         </div>
