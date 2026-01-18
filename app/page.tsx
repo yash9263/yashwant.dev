@@ -1,4 +1,3 @@
-import Experience from '@/components/Experience'
 import ExtLink from '@/components/ExtLink'
 import CursorBlur from '@/components/CursorBlur'
 
@@ -11,38 +10,29 @@ export default function Home() {
         <time className="text-zinc-600 text-sm" dateTime="2025-10-31">
           October 31, 2025
         </time>
-        <div className="flex flex-col gap-16 text-pretty">
+        <div className="flex flex-col gap-12 text-pretty">
           <section className="flex flex-col gap-4" id="about">
             <p className="max-w-lg text-pretty">
-              I&apos;m a software engineer with a passion for problem solving. I
-              enjoy building visually engaging and performant frontends and the
-              backend systems that power them. I love exploring new technologies
-              and building prototypes to validate ideas.
-            </p>
-            <p className="max-w-lg">
-              I currently work at{' '}
-              <ExtLink href="https://www.canstar.com.au" target="_blank">
-                Canstar
-              </ExtLink>
-              , where I contribute to the creation of new features and ui
-              components and the migration of existing ones to the new tech
-              stack, and also help with imporving the internal tools and
-              processes.
+              Hi 👋, I&apos;m a software engineer with a passion for problem
+              solving. I enjoy building visually engaging and performant
+              frontends and the backend systems that power them. I love
+              exploring new technologies and building prototypes to validate
+              ideas.
             </p>
             <p>
               In my spare time, I enjoy going for runs, vibing to 80s music, or
               getting lost in the world of cyberpunk fiction.
             </p>
           </section>
-          <section id="experience">
+          {/* <section id="experience">
             <Experience />
+          </section> */}
+          <section className="flex flex-col gap-4" id="contact">
             <p>
               <ExtLink href="/resume.pdf" target="_blank">
                 View full resume
               </ExtLink>
             </p>
-          </section>
-          <section className="flex flex-col gap-4" id="contact">
             <p className="max-w-lg">
               you can reach me at{' '}
               <a href="mailto:yashwant8530@gmail.com">yashwant8530@gmail.com</a>
@@ -52,14 +42,14 @@ export default function Home() {
                 Github
               </ExtLink>{' '}
               <ExtLink
-                href="https://www.linkedin.com/in/yashwant-sharma-3aa159193/"
+                href="https://www.linkedin.com/in/yashwant-sharma09/"
                 target="_blank"
               >
                 Linkedin
               </ExtLink>
             </p>
             <p className="text-zinc-500 text-sm">
-              procrastinating on writing more stuff here...
+              procrastinating on adding more stuff here...
             </p>
           </section>
         </div>
